@@ -1,0 +1,4 @@
+FROM carlositline/wordpress:4-php7.2-fpm-ldap-opcache-es-CL
+USER root
+RUN pecl install xdebug
+USER www-data
