@@ -1,0 +1,4 @@
+FROM carlositline/wordpress:5-fpm-redis-ldap
+USER root
+RUN pecl install xdebug
+USER www-data
